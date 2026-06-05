@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Dishu ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--pink:#ff6fa5;--light:#fff7fb;--glass:rgba(255,255,255,.18);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Poppins,sans-serif;background:linear-gradient(135deg,#ffd7e8,#fff8fb);color:#333;overflow-x:hidden}
+section{min-height:100vh;display:flex;justify-content:center;align-items:center;padding:40px}
+.card{background:var(--glass);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.4);border-radius:30px;padding:35px;max-width:1000px;width:95%;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+h1,h2{text-align:center}
+.btn{background:var(--pink);color:#fff;padding:14px 28px;border:none;border-radius:999px;cursor:pointer;font-size:1rem}
+.hidden{display:none}
+#bghearts,#confetti{position:fixed;inset:0;pointer-events:none}
+.heart,.conf{position:absolute}
+.hero{font-size:4rem;margin-bottom:10px}
+.timeline .item{margin:25px 0;padding-left:20px;border-left:4px solid var(--pink)}
+.counter{font-size:2rem;font-weight:700;text-align:center}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.reason{background:white;border-radius:18px;padding:15px;transition:.3s}
+.reason:hover{transform:translateY(-4px)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.polaroid{background:white;padding:10px;border-radius:10px;transform:rotate(calc(var(--r)*1deg));box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.polaroid img{width:100%;height:280px;object-fit:cover}
+.caption{text-align:center;padding:8px}
+.type{font-size:1.3rem;line-height:1.8}
+.nav{position:fixed;top:15px;right:15px;z-index:10}
+.nav a{margin:4px;color:#fff;background:var(--pink);padding:8px 12px;border-radius:999px;text-decoration:none}
+input{padding:12px;border-radius:30px;border:none;width:260px}
+audio{width:100%}
+</style>
+</head>
+<body>
+<div id="bghearts"></div><canvas id="confetti"></canvas>
+
+<div class="nav hidden" id="nav">
+<a href="#story">Story</a><a href="#reasons">Reasons</a><a href="#gallery">Gallery</a><a href="#final">Final</a>
+</div>
+
+<section id="gate">
+<div class="card" style="text-align:center">
+<h1>Who's the cutest tiny winy? 🥺❤️</h1>
+<input id="answer" placeholder="Type her name"><br><br>
+<button class="btn" onclick="unlock()">Enter</button>
+<p id="msg"></p>
+</div>
+</section>
+
+<div id="site" class="hidden">
+
+<section>
+<div class="card" style="text-align:center">
+<div class="hero">🌷</div>
+<h1>Happy Birthday Dishu ❤️</h1>
+<p>For the girl who turned ordinary days into my favorite memories.</p>
+<audio controls><source src="Main Agar Kahoon.mp3" type="audio/mpeg"></audio>
+<br><br><a href="#story"><button class="btn">Begin Our Journey</button></a>
+</div>
+</section>
+
+<section id="story">
+<div class="card">
+<h2>Our Story</h2>
+<div class="timeline">
+<div class="item"><h3>24 January 2026</h3><p>The day our story quietly began.</p></div>
+<div class="item"><h3>7 March 2026</h3><p>The day you said yes. The day "you and me" became "us". ❤️</p></div>
+</div>
+<div class="counter" id="counter"></div>
+</div>
+</section>
+
+<section id="about">
+<div class="card">
+<h2>About You</h2>
+<p>You are kind. You are thoughtful. You are funny. You are strong. You are adorable. You are my favorite person. The best part is not one big moment. It's all the little moments that became memories.</p>
+</div>
+</section>
+
+<section id="reasons">
+<div class="card">
+<h2>50 Reasons I Love You ❤️</h2>
+<div class="reasons" id="reasonsBox"></div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="card">
+<h2>Our Memories 📸</h2>
+<div class="gallery">
+<div class="polaroid" style="--r:-3"><img src="photo1.jpg"><div class="caption">My favorite smile ❤️</div></div>
+<div class="polaroid" style="--r:2"><img src="photo2.jpg"><div class="caption">Beautiful as always</div></div>
+<div class="polaroid" style="--r:-1"><img src="photo3.jpg"><div class="caption">Tiny winy energy</div></div>
+<div class="polaroid" style="--r:3"><img src="photo4.jpg"><div class="caption">A memory worth keeping</div></div>
+<div class="polaroid" style="--r:-2"><img src="photo5.jpg"><div class="caption">My favorite pic</div></div>
+<div class="polaroid" style="--r:1"><img src="photo6.jpg"><div class="caption">The girl I adore</div></div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="card">
+<h2>Secret Letter 💌</h2>
+<p>Dear Dishu, thank you for every smile, every call, every laugh, every good morning and every good night. Thank you for being part of my life. These months may be short on a calendar, but they are full of memories for me.</p>
+</div>
+</section>
+
+<section>
+<div class="card" style="text-align:center">
+<h2>Happy Birthday ❤️</h2>
+<p>I hope this year brings happiness, success, peace, health, and countless reasons to smile.</p>
+<button class="btn" onclick="celebrate()">Open Birthday Magic ✨</button>
+</div>
+</section>
+
+<section id="final">
+<div class="card">
+<h2>One Last Thing...</h2>
+<p id="type" class="type"></p>
+<h2>❤️ Love, Yash ❤️</h2>
+</div>
+</section>
+
+</div>
+
+<script>
+function unlock(){
+let v=answer.value.toLowerCase().trim();
+if(['dishu','disha','tiny winy','my dishu'].includes(v)){
+gate.style.display='none';
+site.classList.remove('hidden');
+nav.classList.remove('hidden');
+} else msg.innerText='Wrong answer. Try again, cutie';
+}
+
+const reasons=[
+"Your smile","Your laugh","Your eyes","Your voice","Your kindness","Your patience","Your honesty","Your heart","Your support","Your care",
+"The way you listen","The way you laugh","Your personality","Your energy","Your confidence","Your sweetness","Your loyalty","Your trust","Your warmth(virtual lol)","Your hugs(one day)",
+"Your messages","Your excitement","Your jokes","Your positivity(questionable hai)","Your determination","Your intelligence","Your compassion","Your respect","Your affection","Your uniqueness",
+"Your beautiful heart","The memories we create","The way you understand me","The way you comfort me","The way you make me smile","Your presence","Your little habits","Your attention to detail","Your optimism(firrse questionable but still)","Your strength",
+"Your cute reactions","Your random moments","Your beautiful photos","Your dreams","Your ambition","Your adorable side","Your cute side","Because you're Dishu","Because you chose me","Because you're you"
+];
+reasons.forEach((r,i)=>{
+let d=document.createElement('div');d.className='reason';d.innerHTML='<b>'+(i+1)+'.</b> '+r;reasonsBox.appendChild(d);
+});
+
+const start=new Date('2026-03-07');
+setInterval(()=>{
+let days=Math.floor((Date.now()-start)/86400000);
+counter.textContent=days+' Days Together ❤️';
+},1000);
+
+const text="Dishu... Thank you for making these months beautiful. You are my favorite notification. My favorite smile. My favorite voice. My favorite person. No matter how many words I write, I will never fully explain how much you mean to me. Happy Birthday, my tiny winy. ❤️";
+let i=0;(function t(){if(i<text.length){type.innerHTML+=text[i++];setTimeout(t,35)}})();
+
+for(let i=0;i<40;i++){
+let h=document.createElement('div');h.className='heart';h.innerHTML='❤️';
+h.style.left=Math.random()*100+'vw';h.style.top=Math.random()*100+'vh';
+h.style.opacity=.3+Math.random()*.5;h.animate([{transform:'translateY(0)'},{transform:'translateY(-120px)'}],{duration:4000+Math.random()*5000,iterations:Infinity});
+bghearts.appendChild(h);
+}
+
+function celebrate(){
+const c=document.getElementById('confetti'),x=c.getContext('2d');
+c.width=innerWidth;c.height=innerHeight;
+let p=[...Array(200)].map(()=>({x:Math.random()*c.width,y:-20*Math.random(),s:5+Math.random()*8,v:2+Math.random()*4}));
+(function a(){
+x.clearRect(0,0,c.width,c.height);
+p.forEach(o=>{o.y+=o.v;x.fillRect(o.x,o.y,o.s,o.s);});
+requestAnimationFrame(a);
+})();}
+</script>
+</body></html>
